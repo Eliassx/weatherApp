@@ -1,0 +1,145 @@
+.information {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.6s ease-out;
+}
+
+.information .search {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.information .search input {
+  width: 90%;
+  height: 35px;
+  padding: 10px;
+  color: #000;
+  font-family: "Poppins", serif;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+
+.information .search input::placeholder {
+  color: #555555;
+  text-transform: capitalize;
+  font-size: 21px;
+}
+
+.information .search button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #144896;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.information .weatherInformations {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  scale: 0;
+  opacity: 0;
+}
+
+.information .image-temperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.information .image-temperature img {
+  width: 210px;
+  height: 210px;
+}
+
+.information .name-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-weather .temperature {
+  font-size: 50px;
+}
+
+.name-weather .city {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.information .humidity-windSpeed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity-windSpeed .humidity,
+.humidity-windSpeed .windSpeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.humidity .humidityContent,
+.windSpeed .windContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.humidityContent span,
+.windContent span {
+  font-size: 21px;
+}
+
+.notFound {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  scale: 0;
+  opacity: 0;
+}
+
+.notFound img {
+  width: 300px;
+}
+
+.notFoundMessage .message {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.fade-in {
+  animation: 0.7s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
