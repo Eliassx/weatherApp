@@ -14,8 +14,8 @@ Você precisa ter sua propria chave da API
 
 You need to get your own API key
 
-![Weather App](weatherApp.png)
-![Not Found App](notFound.png)
+![Weather App](./public/weatherApp.png)
+![Not Found App](./public/notFound.png)
 
 ## Instalação / Installation
 
