@@ -4,31 +4,33 @@ import { Wind, Waves } from "@phosphor-icons/react";
 
 import { useState } from "react";
 
-import clearPNG from "../assets/clear.png";
-import rainPNG from "../assets/rain.png";
+import sunPNG from "../assets/sun.png";
 import cloudPNG from "../assets/cloud.png";
+import rainPNG from "../assets/rain.png";
+import cloudyPNG from "../assets/cloudy.png";
+import stormPNG from "../assets/storm.png";
 import snowPNG from "../assets/snow.png";
-import mistPNG from "../assets/mist.png";
+import mistPNG from "../assets/wind.png";
 import notFoundIcon from "../assets/404.png";
 
 function WeatherInformations() {
   const [weather, setWeather] = useState([]);
 
   const allIcons = {
-    "01d": clearPNG,
-    "01n": clearPNG,
-    "02d": clearPNG,
-    "02n": clearPNG,
+    "01d": sunPNG,
+    "01n": sunPNG,
+    "02d": cloudPNG,
+    "02n": cloudPNG,
     "03d": cloudPNG,
     "03n": cloudPNG,
     "04d": cloudPNG,
     "04n": cloudPNG,
     "09d": rainPNG,
     "09n": rainPNG,
-    "10d": rainPNG,
-    "10n": rainPNG,
-    "11d": rainPNG,
-    "11n": rainPNG,
+    "10d": cloudyPNG,
+    "10n": cloudyPNG,
+    "11d": stormPNG,
+    "11n": stormPNG,
     "13d": snowPNG,
     "13n": snowPNG,
     "50d": mistPNG,
@@ -36,7 +38,7 @@ function WeatherInformations() {
   };
 
   const weatherCity = async (city) => {
-    const APIKey = "";
+    const APIKey = "571e5068ea3cd148b8889844d52273cf";
 
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
